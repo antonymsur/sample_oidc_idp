@@ -1,1 +1,1 @@
-web: gunicorn oidc_idp.wsgi --preload --log-file -
+web: gunicorn provider_app.wsgi --preload --log-file -
