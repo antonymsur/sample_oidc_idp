@@ -1,2 +1,2 @@
-django
-django-oidc-provider
+django==1.9
+https://github.com/juanifioren/django-oidc-provider/archive/v0.3.x.zip
