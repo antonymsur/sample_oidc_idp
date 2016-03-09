@@ -1,1 +1,1 @@
-web: python manage.py runserver 8181
+web: python manage.py runserver
