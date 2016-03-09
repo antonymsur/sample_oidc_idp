@@ -126,4 +126,4 @@ logging.basicConfig(
     level = logging.DEBUG,
     format = " %(levelname)s %(name)s: %(message)s",
 )
-
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
