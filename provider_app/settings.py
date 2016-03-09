@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 SECRET_KEY = 'c14d549c574e4d8cf162404ef0b04598'
 
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = False
 
@@ -86,7 +86,7 @@ LOGIN_REDIRECT_URL = '/'
 
 # OIDC Provider settings
 
-SITE_URL = 'http://localhost:8000'
+#SITE_URL = 'http://localhost:8000'
 
 import logging
 logging.basicConfig(
