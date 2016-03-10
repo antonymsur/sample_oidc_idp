@@ -97,10 +97,10 @@ LOGIN_REDIRECT_URL = '/'
 
 # OIDC Provider settings
 
-#SITE_URL = 'http://localhost:8000'
+SITE_URL = 'http://sample-oidcp.herokuapp.com/'
 
 import logging
 logging.basicConfig(
-                    level=logging.DEBUG,
-                    format=" %(levelname)s %(name)s: %(message)s",
-                    )
+					level=logging.DEBUG,
+					format=" %(levelname)s %(name)s: %(message)s",
+					)
