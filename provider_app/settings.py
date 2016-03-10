@@ -57,11 +57,22 @@ WSGI_APPLICATION = 'provider_app.wsgi.application'
 # Database
 
 DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#       'NAME': os.path.join(BASE_DIR, 'DATABASE.sqlite3'),
+#   }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'DATABASE.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddkl9unrdun21b',
+        'USER': 'vvxnrvgyqxwpyc',
+        'PASSWORD': 'kC1GjmqpKc6VMJ8iJDzLob4o0S',
+        'HOST': 'ec2-54-83-57-25.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
+
+
 
 # Internationalization
 
@@ -90,6 +101,6 @@ LOGIN_REDIRECT_URL = '/'
 
 import logging
 logging.basicConfig(
-    level = logging.DEBUG,
-    format = " %(levelname)s %(name)s: %(message)s",
-)
+                    level=logging.DEBUG,
+                    format=" %(levelname)s %(name)s: %(message)s",
+                    )
