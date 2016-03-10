@@ -57,11 +57,11 @@ WSGI_APPLICATION = 'provider_app.wsgi.application'
 # Database
 
 DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#       'NAME': os.path.join(BASE_DIR, 'DATABASE.sqlite3'),
-#   }
     'default': {
+	'ENGINE': 'django.db.backends.sqlite3',
+	'NAME': os.path.join(BASE_DIR, 'DATABASE.sqlite3'),
+    },
+    'default1': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ddkl9unrdun21b',
         'USER': 'vvxnrvgyqxwpyc',
@@ -71,7 +71,9 @@ DATABASES = {
     }
 }
 
-
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 # Internationalization
